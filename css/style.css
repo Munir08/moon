@@ -1,0 +1,378 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat';
+    color: #fff;
+}
+
+.body-img {
+    background: url(../img/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 810px;
+}
+
+.container {
+    margin: 0 30px;
+}
+
+.fon {
+    position: absolute;
+    width: 100%;
+
+}
+button {
+    border: none;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    background: linear-gradient(180deg, rgba(7, 15, 25, 0.55) 0%, rgba(0, 0, 0, 0.00) 90%);
+    height: 251px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    position: relative;
+    align-items: center;
+}
+
+.nav::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    opacity: 0.25;
+    background: #fff;
+    position: absolute;
+    bottom: -5px;
+}
+
+.logo::after {
+    content: '';
+    width: 1px;
+    height: 44px;
+    background: #fff;
+    position: absolute;
+    opacity: 0.25;
+    bottom: -4px;
+    left: 292px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.link1 {
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.link1::before {
+    content: '';
+    width: 1px;
+    height: 44px;
+    background: #fff;
+    position: absolute;
+    bottom: -4px;
+    right: 270px;
+    opacity: 0.25;
+}
+
+.link {
+    margin-left: 15px;
+    margin-right: 35px;
+}
+
+.link1::after {
+    content: '';
+    width: 1px;
+    height: 44px;
+    background: #fff;
+    position: absolute;
+    bottom: -4px;
+    right: 160px;
+    opacity: 0.25;
+}
+
+.content {
+    /* position: relative; */
+    height: 50%;
+}
+
+.links {
+    background: #000;
+    position: absolute;
+    padding: 2px 9px 3px 4px;
+    top: 193px;
+    left: 760px;
+}
+
+.links2 {
+    background: #000;
+    position: absolute;
+    padding: 2px 15px 3px 4px;
+    top: 430px;
+    left: 480px;
+}
+
+.links3 {
+    background: #000;
+    position: absolute;
+    padding: 2px 15px 3px 4px;
+    top: 460px;
+    left: 130px;
+}
+
+.links4 {
+    background: #000;
+    position: absolute;
+    padding: 2px 9px 3px 4px;
+    top: 590px;
+    left: 955px;
+}
+
+.title {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    background: #fff;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.sub-title {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.dow__content {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    max-width: 211px;
+    height: 31px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.dow__link {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.dow__img {
+    width: 25px;
+    height: 25px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* height: 100%; */
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background: transparent;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    color: #000;
+    border: none;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+.close2 {
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.modal-t {
+    display: flex;
+}
+
+.modal-left {}
+
+.modal-img {
+    position: absolute;
+
+}
+
+.modal-title {
+    font-size: 45px;
+    color: #fff;
+    font-family: 'TimesNew';
+    text-transform: capitalize;
+    line-height: 100%;
+    position: relative;
+    width: 390px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 67px;
+}
+
+.modal-desc {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    width: 407px;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: none;
+    padding-left: 25px;
+    padding-top: 30px;
+
+}
+
+.modal-links {
+    padding-top: 30px;
+    padding-left: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.tg {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.whats {
+    margin-left: 10px;
+}
+
+
+
+
+.modal-right {
+    margin-left: 95px;
+    width: 100%;
+}
+
+.name {
+    color: #fff;
+    border: none;
+    position: relative;
+    padding-top: 44px;
+}
+
+.pt {
+    padding-top: 80px;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 25px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 18px;
+
+}
+
+.name::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    bottom: -8px;
+    left: 0;
+}
+
+.button {
+    margin-top: 44px;
+    background: #fff;
+    color: #000;
+    padding: 14px 0;
+    width: 100%;
+}
+
+
+
+
+.panoramaModal {
+    /* width: 400px; */
+    /* height: 400px; */
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#panorama, #panorama2, #panorama3 {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+.x {
+    position: relative;
+}
+.span, .span2, .span3, .span4 {
+    position: absolute;
+    right: 0;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px;
+    z-index: 33;
+}
